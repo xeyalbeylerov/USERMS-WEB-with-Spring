@@ -10,7 +10,7 @@ import com.company.entity.User;
 import java.util.List;
 
 /**
- * @author xeyal
+ * @author Khayal Baylarov
  */
 public interface UserServiceInter {
 

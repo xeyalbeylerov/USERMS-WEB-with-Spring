@@ -16,7 +16,7 @@
 </head>
 <html>
 <body>
-<%@include file="../WEB-INF/header.jsp" %>
+<%@include file="header.jsp" %>
 
 <div class="col-8 my-5 container login_fix_">
     ${message}
@@ -51,14 +51,13 @@
                     class="form-control"
                     id="password"
                     placeholder="type password here"/>
-        <f:errors path="password" cssClass="error"/>
     </div>
         <div class="form-group mx-sm-3 mb-2">
             <label for="password" class="sr-only">password</label>
             <f:password path="matchingPassword"
                         class="form-control"
                         id="password"
-                        placeholder="type password here"/>
+                        placeholder="retype password here"/>
             <f:errors path="password" cssClass="error"/>
         </div>
 

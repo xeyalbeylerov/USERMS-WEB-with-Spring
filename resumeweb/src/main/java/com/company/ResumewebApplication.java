@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-public class ResumewebnewApplication {
+public class ResumewebApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ResumewebnewApplication.class, args);
+		SpringApplication.run(ResumewebApplication.class, args);
 	}
 
 }

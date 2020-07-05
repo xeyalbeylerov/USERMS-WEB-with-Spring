@@ -10,8 +10,7 @@ import com.company.entity.EmployementHistory;
 import java.util.List;
 
 /**
- *
- * @author xeyal
+ * @author Khayal Baylarov
  */
 public interface EmployementHistorylServiceInter {
      public List<EmployementHistory> getAllEmployementHistoryByUserId(int userId);

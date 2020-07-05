@@ -10,7 +10,7 @@ import com.company.entity.UserSkill;
 import java.util.List;
 
 /**
- * @author Xeyal
+ * @author Khayal Baylarov
  */
 public interface UserSkillServiceInter {
 

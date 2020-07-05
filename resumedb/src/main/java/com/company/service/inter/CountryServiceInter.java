@@ -10,8 +10,7 @@ import com.company.entity.Country;
 import java.util.List;
 
 /**
- *
- * @author xeyal
+ * @author Khayal Baylarov
  */
 public interface CountryServiceInter {
 

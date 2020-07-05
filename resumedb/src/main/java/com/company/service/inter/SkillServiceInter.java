@@ -10,14 +10,11 @@ import com.company.entity.Skill;
 import java.util.List;
 
 /**
- *
- * @author Xeyal
+ * @author Khayal Baylarov
  */
 public interface SkillServiceInter {
 
     public List<Skill> getAll();
-
-    public Skill getById(int id);
 
     Skill updateSkill(Skill u);
 

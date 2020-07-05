@@ -13,7 +13,7 @@
     <title>JSP Page</title>
 </head>
 <body>
-<%@include file="../WEB-INF/header.jsp" %>
+<%@include file="header.jsp" %>
 
 <div class="col-8 my-5 container login_fix_">
     <f:form action="useredit" method="POST" modelAttribute="usered" enctype="utf8">

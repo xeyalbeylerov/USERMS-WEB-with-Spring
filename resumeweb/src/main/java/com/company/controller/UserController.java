@@ -7,15 +7,11 @@ import com.company.entity.User;
 import com.company.form.UserForm;
 import com.company.service.DummyService;
 import com.company.service.inter.UserServiceMvcInter;
-import org.apache.catalina.security.SecurityUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
@@ -32,7 +28,8 @@ public class UserController {
 
 
 
-    @RequestMapping(method = RequestMethod.GET, value = "/users")
+//    @RequestMapping(method = RequestMethod.GET, value = "/users")
+    @GetMapping("/users")
     public ModelAndView index(@RequestParam(value = "name", required = false) String name,
                               @RequestParam(value = "surname", required = false) String surname,
                               @RequestParam(value = "nid", required = false) Integer nationalityId) {
@@ -111,7 +108,8 @@ public class UserController {
         return mv;
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/login")
+//    @RequestMapping(method = RequestMethod.GET, value = "/login")
+    @GetMapping("/login")
     public String login() {
         return "login";
     }
@@ -132,7 +130,7 @@ public class UserController {
     public String foo() {
         dummyService.foo();
         dummyService.foo2();
-        return "foo";
+        return "users";
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/index")
